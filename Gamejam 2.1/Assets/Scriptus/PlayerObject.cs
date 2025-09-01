@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class PlayerObject : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rb;
+    private Rigidbody rb;
     [SerializeField] private float Speed = 1f;
     [SerializeField] private float JumpForce = 5f;
 
     [SerializeField] private float Sensitivity = 1f;
 
-    public Vector3 MouseDirection;
+    private Vector3 MouseDirection;
 
     public float Health = 100f;
     private int collisionCount = 0;
