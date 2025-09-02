@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
-
+using UnityEngine.UI;
 using Unity.Mathematics;
 
 
@@ -11,27 +11,30 @@ public class Enemies : MonoBehaviour
     [SerializeField] private GameObject raindrop;
     private GameObject playerObject;
     private PlayerObject player;
-    GameObject drop;
+    private GameObject drop;
+    public Text healthtext;
+    
     void Start()
     {
-        playerObject = GameObject.Find("player");
+        playerObject = GameObject.Find("Player");
         player = playerObject.GetComponent<PlayerObject>();
-        if (gameObject.tag == "Droplet"  ) {
-            InvokeRepeating("SpawnRaindrop", 1f, 3f);
-        }
+        InvokeRepeating("SpawnRaindrop", 1f, 3f);        
     }
     
 
     private void SpawnRaindrop()
     {
-        drop = Instantiate(raindrop, new Vector3(Random.Range(1f, 10f), 10, Random.Range(1f, 10f)), Quaternion.identity);
+        drop = Instantiate(raindrop, new Vector3(Random.Range(-10f, 10f), 50, Random.Range(-10f, 10f)), Quaternion.identity);
     }
+   
     
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == playerObject )
+        if (collision.gameObject == playerObject) 
         {
-            
+            player.Health -= 10;
+            healthtext.text = "Health = " + player.Health;  
         }
+        
     }
 }
