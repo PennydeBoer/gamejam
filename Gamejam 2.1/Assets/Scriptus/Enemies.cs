@@ -16,7 +16,7 @@ public class Enemies : MonoBehaviour
     
     void Start()
     {
-        playerObject = GameObject.Find("player");
+        playerObject = GameObject.Find("Player");
         player = playerObject.GetComponent<PlayerObject>();
         InvokeRepeating("SpawnRaindrop", 1f, 3f);        
     }

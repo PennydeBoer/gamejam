@@ -9,7 +9,7 @@ public class Raindrop : MonoBehaviour
     private void Start()
     {
         enemy = GameObject.Find("tentacle").GetComponent<Enemies>();
-        playerObject = GameObject.Find("player");
+        playerObject = GameObject.Find("Player");
         player = playerObject.GetComponent<PlayerObject>();
     }
     void Update()

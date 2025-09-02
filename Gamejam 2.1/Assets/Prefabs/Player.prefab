@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2163608142987721778}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frogwizzard: {fileID: 4558566496332599506}
-  Speed: 50
+  Speed: 10
   JumpForce: 5
   Sensitivity: 2
   Health: 100
