@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerObject : MonoBehaviour
@@ -38,6 +39,10 @@ public class PlayerObject : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && collisionCount > 0)
         {
             rb.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+        }
+        if(Health < 0)
+        {
+            SceneManager.LoadScene(1);
         }
     }
 
