@@ -522,7 +522,9 @@ PrefabInstance:
       value: frogwizardguy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -6709288533808664266, guid: 08c1b9d367d444d48af43ca87df8636a, type: 3}
+    - {fileID: -1103291440597685352, guid: 08c1b9d367d444d48af43ca87df8636a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 08c1b9d367d444d48af43ca87df8636a, type: 3}
