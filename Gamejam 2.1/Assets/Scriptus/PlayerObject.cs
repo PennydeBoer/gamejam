@@ -4,10 +4,14 @@ using UnityEngine;
 public class PlayerObject : MonoBehaviour
 {
     private Rigidbody rb;
+    [SerializeField] private GameObject frogwizzard;
+    private Animator anim;
     [SerializeField] private float Speed = 1f;
     [SerializeField] private float JumpForce = 5f;
 
     [SerializeField] private float Sensitivity = 1f;
+
+    
 
     private Vector3 MouseDirection;
 
@@ -20,6 +24,7 @@ public class PlayerObject : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        anim = frogwizzard.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -40,6 +45,16 @@ public class PlayerObject : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveVertical).normalized;
+        if (movement != Vector3.zero)
+        {
+            Debug.Log("Moving");
+            anim.Play("Walk");
+        }   
+        else
+        {
+            Debug.Log("Idle");
+            anim.Play("Idle");
+        }
         rb.MovePosition(transform.position + movement * Speed * Time.deltaTime);
     }
 
