@@ -79,7 +79,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 45.4
+    m_Value: 11.83
   tintColor:
     m_OverrideState: 1
     m_Value: {r: 0.78867924, g: 0.4565555, b: 0.09374862, a: 1}
@@ -88,13 +88,13 @@ MonoBehaviour:
     m_Value: 1
   firstFlareIntensity:
     m_OverrideState: 1
-    m_Value: 28.08
+    m_Value: 15.44
   secondaryFlareIntensity:
-    m_OverrideState: 1
-    m_Value: 3.01
+    m_OverrideState: 0
+    m_Value: 0
   warpedFlareIntensity:
-    m_OverrideState: 1
-    m_Value: 2.38
+    m_OverrideState: 0
+    m_Value: 0
   warpedFlareScale:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1}
@@ -115,10 +115,10 @@ MonoBehaviour:
     m_Value: 1.5
   streaksIntensity:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 14.11
   streaksLength:
-    m_OverrideState: 0
-    m_Value: 0.5
+    m_OverrideState: 1
+    m_Value: 0.8
   streaksOrientation:
     m_OverrideState: 0
     m_Value: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
     m_Value: 4
   chromaticAbberationIntensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.2
 --- !u!114 &7800043656828746190
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -165,16 +165,16 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 1.29
+    m_Value: 1.25
   intensity:
     m_OverrideState: 1
-    m_Value: 8.92
+    m_Value: 9.91
   scatter:
     m_OverrideState: 1
-    m_Value: 0.32
+    m_Value: 0
   clamp:
-    m_OverrideState: 0
-    m_Value: 65472
+    m_OverrideState: 1
+    m_Value: 1
   tint:
     m_OverrideState: 1
     m_Value: {r: 0.49357772, g: 0.5998509, b: 0.6830188, a: 1}
@@ -209,16 +209,16 @@ MonoBehaviour:
   active: 1
   color:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_Value: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
   center:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.43
+    m_Value: 0.35
   smoothness:
-    m_OverrideState: 0
-    m_Value: 0.2
+    m_OverrideState: 1
+    m_Value: 0.42
   rounded:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
