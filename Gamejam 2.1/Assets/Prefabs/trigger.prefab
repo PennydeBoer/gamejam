@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2387246937543614593}
   - component: {fileID: 979865164200715274}
   - component: {fileID: 8600891472756858491}
-  - component: {fileID: 6734969631184470626}
   - component: {fileID: 2633859125089595911}
+  - component: {fileID: 521338445322419342}
   m_Layer: 0
   m_Name: trigger
   m_TagString: Trigger
@@ -89,8 +89,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6734969631184470626
-MeshCollider:
+--- !u!114 &2633859125089595911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871410442903498403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6442778692627d488c0d0ea8d6750d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tentacleObject: {fileID: 6216024987944943703}
+--- !u!65 &521338445322419342
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,23 +120,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2633859125089595911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871410442903498403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6442778692627d488c0d0ea8d6750d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tentacleObject: {fileID: 6216024987944943703}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 9.90552, z: 9.343263}
+  m_Center: {x: 0.000000046162675, y: 3.9527602, z: 0.7780191}
 --- !u!1001 &6521960044528155910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,31 +145,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.90823
+      value: 2.610642
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.620672
+      value: -6.62066
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.851381
+      value: -9.644974
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.71325046
+      value: 0.7396939
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70090926
+      value: 0.6729436
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -178,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 89
+      value: 84.589
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb42642760b6c9f4ab3339b7dd686727, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
