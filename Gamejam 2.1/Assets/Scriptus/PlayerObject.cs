@@ -31,7 +31,7 @@ public class PlayerObject : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Movement();
         CameraMovement();
@@ -50,7 +50,7 @@ public class PlayerObject : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveVertical).normalized;
+        Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveVertical).normalized*Time.deltaTime;
         if (movement != Vector3.zero)
         {
             //Debug.Log("Moving");
