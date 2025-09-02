@@ -26,5 +26,13 @@ public class Raindrop : MonoBehaviour
             player.Health -= 10;
             enemy.healthtext.text = "Health = " + player.Health;
         }
+        else
+        {
+            Invoke("DespawnRaindrops", 0.2f);
+        }
+    }
+    private void DespawnRaindrops()
+    {
+        Destroy(gameObject);
     }
 }
