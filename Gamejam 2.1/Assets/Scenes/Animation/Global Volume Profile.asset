@@ -16,6 +16,54 @@ MonoBehaviour:
   - {fileID: 8662257846107286045}
   - {fileID: 7905891245031241290}
   - {fileID: 5987218593770220374}
+  - {fileID: 7800043656828746190}
+  - {fileID: 1364705169813793652}
+--- !u!114 &1364705169813793652
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 1
+  gaussianStart:
+    m_OverrideState: 1
+    m_Value: 115.5
+  gaussianEnd:
+    m_OverrideState: 1
+    m_Value: 257.3
+  gaussianMaxRadius:
+    m_OverrideState: 1
+    m_Value: 1.06
+  highQualitySampling:
+    m_OverrideState: 1
+    m_Value: 0
+  focusDistance:
+    m_OverrideState: 1
+    m_Value: 6
+  aperture:
+    m_OverrideState: 0
+    m_Value: 5.6
+  focalLength:
+    m_OverrideState: 1
+    m_Value: 26
+  bladeCount:
+    m_OverrideState: 0
+    m_Value: 5
+  bladeCurvature:
+    m_OverrideState: 0
+    m_Value: 1
+  bladeRotation:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &5987218593770220374
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -30,23 +78,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 45.4
   tintColor:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.78867924, g: 0.4565555, b: 0.09374862, a: 1}
   bloomMip:
     m_OverrideState: 0
     m_Value: 1
   firstFlareIntensity:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 52.29
   secondaryFlareIntensity:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 3.01
   warpedFlareIntensity:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 2.38
   warpedFlareScale:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1}
@@ -66,8 +114,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1.5
   streaksIntensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 4
   streaksLength:
     m_OverrideState: 0
     m_Value: 0.5
@@ -82,7 +130,23 @@ MonoBehaviour:
     m_Value: 4
   chromaticAbberationIntensity:
     m_OverrideState: 0
-    m_Value: 0.5
+    m_Value: 1
+--- !u!114 &7800043656828746190
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.47
 --- !u!114 &7905891245031241290
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -101,13 +165,13 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 1.1
+    m_Value: 1.29
   intensity:
     m_OverrideState: 1
-    m_Value: 10.04
+    m_Value: 8.92
   scatter:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.32
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -151,7 +215,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.267
+    m_Value: 0.43
   smoothness:
     m_OverrideState: 0
     m_Value: 0.2

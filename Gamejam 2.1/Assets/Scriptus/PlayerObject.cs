@@ -26,6 +26,7 @@ public class PlayerObject : MonoBehaviour
     {
         anim = frogwizzard.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -47,12 +48,12 @@ public class PlayerObject : MonoBehaviour
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveVertical).normalized;
         if (movement != Vector3.zero)
         {
-            Debug.Log("Moving");
+            //Debug.Log("Moving");
             anim.Play("Walk");
         }   
         else
         {
-            Debug.Log("Idle");
+            //Debug.Log("Idle");
             anim.Play("Idle");
         }
         rb.MovePosition(transform.position + movement * Speed * Time.deltaTime);

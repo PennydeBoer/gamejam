@@ -24,7 +24,7 @@ public class Raindrop : MonoBehaviour
         if (collision.gameObject == playerObject)
         {
             player.Health -= 10;
-            enemy.healthtext.text = "Health = " + player.Health;
+            //enemy.healthtext.text = "Health = " + player.Health;
         }
         else
         {

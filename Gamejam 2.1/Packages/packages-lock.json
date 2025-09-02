@@ -195,7 +195,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.toonshader": {
-      "version": "file:C:/Users/Gebruiker/Downloads/com.unity.toonshader-0.12.0-preview/package",
+      "version": "file:C:/Users/rens/Downloads/package",
       "depth": 0,
       "source": "local",
       "dependencies": {
