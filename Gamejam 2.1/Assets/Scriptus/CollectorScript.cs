@@ -9,7 +9,7 @@ public class CollectorScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             pointsManager.manaPoints += 1;
-            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
 }
