@@ -106,7 +106,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Flow_Speed: 0
+    - _Flow_Speed: 0.01
     - _Flow_Strength: 0.001
     - _Foam_Distance: 4.41
     - _GlossMapScale: 0

@@ -13,7 +13,7 @@ public class CollectorScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             pointsManager.manaPoints += 1;
-            enemy.ManaText.text = pointsManager.manaPoints + "/8";
+            enemy.ManaText.text = "Moons: " +pointsManager.manaPoints + "/8";
             Destroy(gameObject);
         }
     }

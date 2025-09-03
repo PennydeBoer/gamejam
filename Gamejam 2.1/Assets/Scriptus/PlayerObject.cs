@@ -15,8 +15,6 @@ public class PlayerObject : MonoBehaviour
     
 
     private Vector3 MouseDirection;
-
-    public float Health = 100f;
     private int collisionCount = 0;
 
 
@@ -38,11 +36,7 @@ public class PlayerObject : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && collisionCount > 0)
         {
-            rb.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
-        }
-        if(Health < 0)
-        {
-            SceneManager.LoadScene(1);
+            rb.AddForce(Vector3.up * JumpForce*Time.deltaTime, ForceMode.Impulse);
         }
     }
 

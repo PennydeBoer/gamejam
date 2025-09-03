@@ -17,7 +17,7 @@ public class TriggerSpawn : MonoBehaviour
     {
         animator.SetTrigger("Animation");
         spawned = true;
-        Invoke("EnableCollider", 1f);
+        Invoke("EnableCollider", 1.3f);
     }
     private void OnTriggerEnter(Collider other)
     {
